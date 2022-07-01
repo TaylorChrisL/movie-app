@@ -1,5 +1,5 @@
 require "ffaker"
 
 10.times do
-  Actor.create(first_name: FFaker::Name.first_name, last_name: FFaker::Name.last_name, known_for: FFaker::Movie.title)
+  Movie.create(title: FFaker::Movie.title, year: FFaker::Vehicle.year.to_i, plot: FFaker::Lorem.paragraph)
 end
