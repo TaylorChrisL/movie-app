@@ -1,0 +1,8 @@
+### GET using Body parameter
+
+GET http://localhost:3000/actor
+Content-Type: application/json
+
+{
+  "id": "2"
+}

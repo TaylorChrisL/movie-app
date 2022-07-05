@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
   get "/actor/:id", controller: "actors", action: "show_actor"
 
+  get "/actor" => "actors#show_actor"
+
   get "/movies" => "movies#index"
 
   get "/movies/:id" => "movies#show"
