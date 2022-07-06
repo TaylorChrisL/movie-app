@@ -1,8 +1,63 @@
-### GET using Body parameter
+### actors Index
 
-GET http://localhost:3000/actor
+GET http://localhost:3000/actors
+
+### actors Show
+
+GET http://localhost:3000/actors/8
+
+### actors create
+
+POST http://localhost:3000/actors
 Content-Type: application/json
 
 {
-  "id": "2"
+  "first_name": "Test",
+  "last_name": "Data",
+  "known_for": "Test Data"
 }
+
+### actors Update
+
+PATCH http://localhost:3000/actors/8
+Content-Type: application/json
+
+{
+  "known_for": "update"
+}
+
+### actors Delete
+
+DELETE http://localhost:3000/actors/15
+
+### movies Index
+
+GET http://localhost:3000/movies
+
+### movies Show
+
+GET http://localhost:3000/movies/8
+
+### movies create
+
+POST http://localhost:3000/movies
+Content-Type: application/json
+
+{
+  "title": "Test",
+  "year": "1950",
+  "plot": "Data"
+}
+
+### movies Update
+
+PATCH http://localhost:3000/movies/11
+Content-Type: application/json
+
+{
+  "year": "1800"
+}
+
+### movies Delete
+
+DELETE http://localhost:3000/movies/11
