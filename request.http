@@ -14,7 +14,9 @@ Content-Type: application/json
 {
   "first_name": "Test",
   "last_name": "Data",
-  "known_for": "Test Data"
+  "known_for": "Test Data",
+  "gender": "male",
+  "age": "6"
 }
 
 ### actors Update
@@ -46,16 +48,18 @@ Content-Type: application/json
 {
   "title": "Test",
   "year": "1950",
-  "plot": "Data"
+  "plot": "Data",
+  "director": "Test",
+  "english": "true"
 }
 
 ### movies Update
 
-PATCH http://localhost:3000/movies/11
+PATCH http://localhost:3000/movies/1
 Content-Type: application/json
 
 {
-  "year": "1800"
+  "english": "false"
 }
 
 ### movies Delete
