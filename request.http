@@ -12,7 +12,7 @@ POST http://localhost:3000/actors
 Content-Type: application/json
 
 {
-  "first_name": "Test",
+  "first_name": "T",
   "last_name": "Data",
   "known_for": "Test Data",
   "gender": "male",
@@ -47,7 +47,7 @@ Content-Type: application/json
 
 {
   "title": "Test",
-  "year": "1950",
+  "year": "so",
   "plot": "Data",
   "director": "Test",
   "english": "true"
