@@ -1,5 +1,11 @@
 ### actors Index
 
+#admin
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTgwMzMyNzd9.M-Ydl_gDN3dPndowXy-arz1TgJZ09FrsCjYTrtIl67o
+
+#user
+# @jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTgwMzMzODB9.49e-LJX664eI0Vjc57UEr0j9krb-mDZPoAixaE339WQ
+
 GET http://localhost:3000/actors
 
 ### actors Show
@@ -65,3 +71,24 @@ Content-Type: application/json
 ### movies Delete
 
 DELETE http://localhost:3000/movies/11
+
+### Users create (signup)
+POST http://localhost:3000/users.json
+Content-Type: application/json
+
+{
+  "name": "Test name3",
+  "email": "test3@test.com",
+  "admin": "false",
+  "password": "password",
+  "password_confirmation": "password"
+}
+
+### Sessions create (login)
+POST http://localhost:3000/sessions.json
+Content-Type: application/json
+
+{
+  "email": "test2@test.com",
+  "password": "password"
+}

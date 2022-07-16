@@ -5,3 +5,4 @@ class Actor < ApplicationRecord
   validates :known_for, presence: true
   validates :age, numericality: true, numericality: { greater_than: 2}
 end
+ 
