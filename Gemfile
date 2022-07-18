@@ -48,4 +48,5 @@ end
 
 gem 'ffaker'
 gem 'jwt'
+gem 'jb'
 
