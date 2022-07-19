@@ -4,4 +4,6 @@ Rails.application.routes.draw do
 
   post "/users" => "users#create", default: { format: :json}
   post "/sessions" => "sessions#create"
+
+  post "/movie_genres" => "movie_genres#create", default: { format: :json }
 end
