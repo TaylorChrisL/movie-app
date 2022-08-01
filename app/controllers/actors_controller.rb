@@ -17,8 +17,8 @@ class ActorsController < ApplicationController
       last_name: params["last_name"],
       known_for: params["known_for"],
       gender: params["gender"],
-      age: params["age"]
-      movie_id: params["movie_id"]
+      age: params["age"],
+      movie_id: params["movie_id"],
     )
 
     if actor.save
@@ -49,7 +49,6 @@ class ActorsController < ApplicationController
     actor = Actor.find_by(id: params["id"])
     actor.destroy
 
-    render json: {message: "Successfully Obliterated!"}
+    render json: { message: "Successfully Obliterated!" }
   end
-
 end
